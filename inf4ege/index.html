@@ -2,47 +2,40 @@
 <meta charset="UTF-8">
 <script>
 function klassin(o){
- lgnfrm.user.value=o.name;
- lgnfrm.password.value=o.title;
- lgnfrm.submit();
+ var url = "https://inf-ege.sdamgia.ru/?la=login&user=" + o.name + "&password=" + o.title;
+ document.location = url;
 }
 </script>
 <style>
 input{
-width:180;
+width:180px;
 }
 </style>
 </head>
 <body>
 
-<form id="lgnfrm" action="https://inf-ege.sdamgia.ru/" method="post" style="display='none'" rel="nofollow noopener">
-	<input type="hidden" name="user" 		value="" placeholder="Электронная почта" >
-	<input type="hidden" name="password" 	value="" placeholder="Пароль">
-	<input type="hidden" name="la" 			value="login">
-</form>
 
 <center>
 <h1>inf4ege</h1>
 <pre>
-
-<input type='button' value="Админ" name="inf4ege+2021.Admin@gmail.com" title="1" onclick="klassin(this)">
-<input type='button' value="Боброва Валерия " name="inf4ege+2021.Bobrova@gmail.com" title="1" onclick="klassin(this)">
-<input type='button' value="Винделович Евгений " name="inf4ege+2021.Vindelovich@gmail.com" title="1" onclick="klassin(this)">
-<input type='button' value="Горявина Валерия" name="inf4ege+2021.Goryavina@gmail.com" title="1" onclick="klassin(this)">
-<input type='button' value="Дрепак Дмитрий " name="inf4ege+2021.Drepak@gmail.com" title="1" onclick="klassin(this)">
-<input type='button' value="Зворыгин Вадим " name="inf4ege+2021.Zvorygin@gmail.com" title="1" onclick="klassin(this)">
-<input type='button' value="Иванникова Вера " name="inf4ege+2021.Ivannikova@gmail.com" title="1" onclick="klassin(this)">
-<input type='button' value="Казорин Кирилл " name="inf4ege+2021.Kazorin@gmail.com" title="1" onclick="klassin(this)">
-<input type='button' value="Карасев Максим " name="inf4ege+2021.Karasev@gmail.com" title="1" onclick="klassin(this)">
-<input type='button' value="Комарова Алена" name="inf4ege+2021.Komarova@gmail.com" title="1" onclick="klassin(this)">
-<input type='button' value="Корейчук Роман" name="inf4ege+2021.Korejchuk@gmail.com" title="1" onclick="klassin(this)">
-<input type='button' value="Космылев Евгений " name="inf4ege+2021.Kosmylev@gmail.com" title="1" onclick="klassin(this)">
-<input type='button' value="Непомнящих Константин " name="inf4ege+2021.Nepomnyashchih@gmail.com" title="1" onclick="klassin(this)">
-<input type='button' value="Прощенко Всеволод " name="inf4ege+2021.Proshchenko@gmail.com" title="1" onclick="klassin(this)">
-<input type='button' value="Фёдорова Аделина " name="inf4ege+2021.Fyodorova@gmail.com" title="1" onclick="klassin(this)">
-<input type='button' value="Шнайдер Максим " name="inf4ege+2021.SHnajder@gmail.com" title="1" onclick="klassin(this)">
-<input type='button' value="Ямщиков Владимир " name="inf4ege+2021.YAmshchikov@gmail.com" title="1" onclick="klassin(this)">
-
+<!--a href="https://inf-ege.sdamgia.ru/?la=login&user=inf4ege%2B2021.Admin@gmail.com&password=1" rel="nofollow noopener" title="1">Админ</a><br-->
+<input type='button' value="Админ" name="inf4ege%2B2021.Admin@gmail.com" title="1" onclick="klassin(this)">
+<input type='button' value="Боброва Валерия " name="inf4ege%2B2021.Bobrova@gmail.com" title="1" onclick="klassin(this)">
+<input type='button' value="Винделович Евгений " name="inf4ege%2B2021.Vindelovich@gmail.com" title="1" onclick="klassin(this)">
+<input type='button' value="Горявина Валерия" name="inf4ege%2B2021.Goryavina@gmail.com" title="1" onclick="klassin(this)">
+<input type='button' value="Дрепак Дмитрий " name="inf4ege%2B2021.Drepak@gmail.com" title="1" onclick="klassin(this)">
+<input type='button' value="Зворыгин Вадим " name="inf4ege%2B2021.Zvorygin@gmail.com" title="1" onclick="klassin(this)">
+<input type='button' value="Иванникова Вера " name="inf4ege%2B2021.Ivannikova@gmail.com" title="1" onclick="klassin(this)">
+<input type='button' value="Казорин Кирилл " name="inf4ege%2B2021.Kazorin@gmail.com" title="1" onclick="klassin(this)">
+<input type='button' value="Карасев Максим " name="inf4ege%2B2021.Karasev@gmail.com" title="1" onclick="klassin(this)">
+<input type='button' value="Комарова Алена" name="inf4ege%2B2021.Komarova@gmail.com" title="1" onclick="klassin(this)">
+<input type='button' value="Корейчук Роман" name="inf4ege%2B2021.Korejchuk@gmail.com" title="1" onclick="klassin(this)">
+<input type='button' value="Космылев Евгений " name="inf4ege%2B2021.Kosmylev@gmail.com" title="1" onclick="klassin(this)">
+<input type='button' value="Непомнящих Константин " name="inf4ege%2B2021.Nepomnyashchih@gmail.com" title="1" onclick="klassin(this)">
+<input type='button' value="Прощенко Всеволод " name="inf4ege%2B2021.Proshchenko@gmail.com" title="1" onclick="klassin(this)">
+<input type='button' value="Фёдорова Аделина " name="inf4ege%2B2021.Fyodorova@gmail.com" title="1" onclick="klassin(this)">
+<input type='button' value="Шнайдер Максим " name="inf4ege%2B2021.SHnajder@gmail.com" title="1" onclick="klassin(this)">
+<input type='button' value="Ямщиков Владимир " name="inf4ege%2B2021.YAmshchikov@gmail.com" title="1" onclick="klassin(this)">
 
 </pre>
 </center>
